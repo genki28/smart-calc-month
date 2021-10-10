@@ -1,6 +1,6 @@
 {
   "name": "smart-calc-month",
-  "version": "1.0.0",
+  "version": "0.0.1-demo",
   "main": "index.js",
   "types": "index.d.ts",
   "license": "MIT",
