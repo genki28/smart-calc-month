@@ -1,5 +1,13 @@
 interface SmartCalcMonthInterface {
+  /**
+   * Check if it's a leap year
+   * @return boolean
+   */
   isLeapYear(): boolean;
+  /**
+   * Calculate the number of days in a month
+   * @return number
+   */
   calcDayInMonth(): number;
 }
 
@@ -17,10 +25,18 @@ export default class SmartCalcMonth implements SmartCalcMonthInterface {
     this.monthValue = month;
   }
 
+  /**
+   * Check if it's a leap year
+   * @return boolean
+   */
   isLeapYear(): boolean {
     return this.yearValue % 400 === 0 || (this.yearValue % 4 === 0 && this.yearValue % 100 !== 0);
   }
 
+  /**
+   * Calculate the number of days in a month
+   * @return number
+   */
   calcDayInMonth(): number {
     if (this.monthValue === 2) {
       if (this.isLeapYear()) {
