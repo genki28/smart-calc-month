@@ -1,0 +1,14 @@
+{
+  "name": "smart-calc-month",
+  "version": "1.0.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
+}
